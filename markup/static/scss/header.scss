@@ -1,0 +1,108 @@
+@mixin fontZC($z, $c){
+    font-size:$z;
+    color: $c;
+}
+
+.header{
+    margin-top: 36px;
+    margin-bottom: 29px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    font-weight: 400;
+    @include fontZC(24px, #000);
+    span{color: #939393;}
+}
+.header-nav-container{display: none;}
+.header-nav{
+}
+.header-list{
+    .header-list-item{
+        .header-item-link{
+
+        }
+    }
+}
+.header-btn{}
+.burger{
+    background: none;
+    img{
+        display: block;
+        width: 100%;
+        width: 30px;
+        height: 17px;
+    }
+}
+/*----------------header----media------------------*/
+@media(min-width:768px){
+
+    .header{
+        margin-top: 39px;
+        margin-bottom: 40px;
+    }
+    .header-logo{
+        font-weight: 400;
+        @include fontZC(30px, #000);
+    }
+}
+@media(min-width:1600px){
+
+
+    .header{
+       margin: 55px 0;
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 236px;
+    }
+    .header-logo{
+        font-weight: 400;
+        @include fontZC(36px, #000);
+        span{color: #939393;}
+    }
+    .header-nav-container{
+        display: flex;
+        align-items: center;
+        gap: 121px;
+    }
+    .header-nav{
+    }
+    .header-list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .header-list-item{
+            .header-item-link{
+                @include fontZC(20px, #263238);
+                transition: all 250ms;
+                &:hover{
+                    color: #263240;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .header-btn{
+        font-weight: 400;
+        @include fontZC(20px, #000);
+        letter-spacing: 0.03em;
+        text-align: center;
+        background-color: #ffffff;
+        border: 2px solid #263238;
+        border-radius: 10px;
+        padding: 20px 107px;
+        transition: all 250ms;
+        &:hover{
+            background-color: #c4c4c4;
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
