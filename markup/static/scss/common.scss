@@ -1,0 +1,36 @@
+@import "reset.scss";
+@import "header.scss";
+@import "hero-section.scss";
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.container {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 15px;
+}
+@media(min-width:768px){
+
+    .container {
+        max-width: 768px;
+        padding: 0 39px;
+    }
+}
+@media(min-width:1600px){
+
+    .container {
+        max-width: 1600px;
+        padding: 0 131px;
+    }
+}

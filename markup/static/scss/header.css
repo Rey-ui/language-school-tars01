@@ -1,0 +1,52 @@
+.header {
+  margin-top: 36px;
+  margin-bottom: 29px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+.header-logo span {
+  color: #939393;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+
+.burger {
+  background: none;
+}
+.burger img {
+  display: block;
+  width: 100%;
+  width: 30px;
+  height: 17px;
+}
+
+/*----------------header----media------------------*/
+@media (min-width: 768px) {
+  .header {
+    margin-top: 39px;
+    margin-bottom: 40px;
+  }
+  .header-logo {
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

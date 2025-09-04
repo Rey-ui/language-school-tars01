@@ -1,0 +1,11 @@
+.hero {
+  margin-bottom: 53px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+/*# sourceMappingURL=hero-section.css.map */
