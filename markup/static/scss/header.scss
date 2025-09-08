@@ -80,6 +80,7 @@
         .header-list-item{
             .header-item-link{
                 @include fontZC(20px, #263238);
+                white-space: nowrap;
                 transition: all 250ms;
                 &:hover{
                     color: #263240;
@@ -97,6 +98,8 @@
         border: 2px solid #263238;
         border-radius: 10px;
         padding: 20px 107px;
+        white-space: nowrap;
+
         transition: all 250ms;
         &:hover{
             background-color: #c4c4c4;

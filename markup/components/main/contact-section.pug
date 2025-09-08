@@ -1,0 +1,17 @@
+mixin contact-section(data)
+    section.contact-section
+        .container.contact-container
+            h2.contact-title Contact Us
+            .contact-content-container
+                img(srcset="../../static/img/content/desk/contact.png 1x, " +
+                "../../static/img/content/desk/contact@2x.png 2x" alt="contact").contact-img
+                .contact-content
+                    h2.contact-content-title Contact Us
+                    .contact-content-wrap
+                        p.contact-content-text Discover your current English level by
+                            |taking our free online English test.
+                            |Sign up to our newsletter for learning tips
+                            |and free resource
+                        form.contact-content-form
+                            input(type='email' placeholder='Enter Your E-mail').form-input
+                            button(type='submit').form-btn Subscribe

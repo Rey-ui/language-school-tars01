@@ -6,6 +6,10 @@ html(class="no-js", lang="ru")
     include ../components/head/head.pug
     include ../components/main/header.pug
     include ../components/main/hero-section.pug
+    include ../components/main/skills-section.pug
+    include ../components/main/about-section.pug
+    include ../components/main/pricing-section.pug
+    include ../components/main/contact-section.pug
     include ../components/footer/footer.pug
 
     head
@@ -15,7 +19,11 @@ html(class="no-js", lang="ru")
         +header()
         main.main
             +hero-section()
-
+            +skills-section()
+            +about-section()
+            +pricing-section()
+            +contact-section()
+        +footer()
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();
 

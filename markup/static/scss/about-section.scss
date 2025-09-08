@@ -1,0 +1,125 @@
+%flex-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section{
+    margin-bottom: 84px;
+}
+.about-container{}
+.about-title{ margin-bottom: 54px;}
+.about-content-container{
+    @extend %flex-about;
+    gap: 23px;
+}
+.about-image{}
+.about-content{
+    @extend %flex-about;
+    gap: 26px;
+}
+.about-content-text{
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #8f95a5;
+}
+.about-content-list{
+    @extend %flex-about;
+    gap: 26px;
+}
+.about-content-item{
+    @extend %flex-about;
+}
+.about-content-num{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 333%;
+    color: #2a3246;
+}
+.about-content-p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #8f95a5;
+}
+/*----------------hero----media------------------*/
+@media(min-width:768px){
+    .about-section{
+        margin-bottom: 88px;
+    }
+    .about-container{}
+    .about-title{font-size: 30px;
+        line-height: 267%;
+        margin-bottom: 0;
+        text-align: start;
+    }
+    .about-content-container{
+
+        flex-direction: row-reverse;
+        gap: 78px;
+    }
+    .about-image{
+        max-width: 295px;
+    }
+    .about-content{
+
+        gap: 26px;
+    }
+    .about-content-text{
+        text-align: start;
+        font-size: 14px;
+    }
+    .about-content-list{
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .about-content-num{
+        font-size: 22px;
+        line-height: 364%;
+    }
+    .about-content-p{
+        text-align: center;
+    }
+
+    }
+@media(min-width:1600px){
+    .about-section{
+        margin-bottom: 180px;
+    }
+    .about-title{
+        font-size: 48px;
+        margin-bottom: 60px;
+        line-height: 1.5;
+    }
+    .about-content-container{
+        align-items: flex-start;
+        gap: 146px;
+    }
+    .about-image{
+        max-width: 540px;
+    }
+    .about-content{
+
+        gap: 30px;
+    }
+    .about-content-text{
+        font-size: 20px;
+        line-height: 180%;
+    }
+    .about-content-list{
+
+        gap: 130px;
+    }
+    .about-content-item{
+        gap: 6px;
+    }
+    .about-content-num{
+        line-height: 172%;
+        font-size: 48px;
+    }
+    .about-content-p{
+        font-size: 20px;
+    }
+}
